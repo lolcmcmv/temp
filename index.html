@@ -4,18 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OG Websites | Premium Development</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;600;800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://www.paypal.com/sdk/js?client-id=AbvoNQiduLHQzN2OpamkoIUbGPPMLCjiiIWabtl3UZ-wMY4IuWnNcT1KtPG65JbNfMLDXFwoIMleQGfR&vault=true&intent=subscription"></script>
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("NFfpza5ndHKX5cbbw"); 
-        })();
-    </script>
-
     <style>
         :root{
             --bg:#05070a;
@@ -46,7 +36,7 @@
             display:flex;
             flex-direction:column;
             align-items:center;
-            overflow-x: hidden;
+            overflow-x:hidden;
         }
 
         @keyframes fadeInDown{
@@ -88,11 +78,11 @@
             height:100px;
             border-radius:20px;
             filter:drop-shadow(0 0 20px var(--accent-glow));
-            transition: transform 0.3s ease;
+            transition:transform 0.3s ease;
         }
 
         .nav-container:hover .nav-logo-img{
-            transform: scale(1.05);
+            transform:scale(1.05);
         }
 
         .nav-buttons{
@@ -181,6 +171,16 @@
             color:#000;
         }
 
+        .auth-mode-toggle{
+            width:100%;
+            justify-content:space-between;
+        }
+
+        .auth-mode-toggle .toggle-opt{
+            flex:1;
+            text-align:center;
+        }
+
         .glass-card{
             background:var(--glass);
             backdrop-filter:blur(10px);
@@ -216,56 +216,56 @@
             box-shadow:0 0 15px var(--accent-glow);
         }
 
-        .compare-container {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
+        .compare-container{
+            display:flex;
+            flex-direction:column;
+            gap:2rem;
         }
 
-        .compare-group {
-            border-bottom: 1px solid var(--glass-border);
-            padding-bottom: 1.5rem;
+        .compare-group{
+            border-bottom:1px solid var(--glass-border);
+            padding-bottom:1.5rem;
         }
 
-        .compare-group:last-child {
-            border-bottom: none;
+        .compare-group:last-child{
+            border-bottom:none;
         }
 
-        .compare-header {
-            color: var(--accent-light);
-            font-weight: 800;
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .compare-header{
+            color:var(--accent-light);
+            font-weight:800;
+            font-size:1.1rem;
+            margin-bottom:1rem;
+            text-transform:uppercase;
+            letter-spacing:1px;
+            display:flex;
+            align-items:center;
+            gap:10px;
         }
 
-        .compare-row {
-            display: grid;
-            grid-template-columns: 100px 1fr;
-            padding: 8px 0;
-            align-items: center;
+        .compare-row{
+            display:grid;
+            grid-template-columns:100px 1fr;
+            padding:8px 0;
+            align-items:center;
         }
 
-        .compare-label {
-            color: #fff;
-            font-weight: 600;
-            font-size: 0.85rem;
-            opacity: 0.9;
+        .compare-label{
+            color:#fff;
+            font-weight:600;
+            font-size:0.85rem;
+            opacity:0.9;
         }
 
-        .compare-value {
-            color: var(--text-dim);
-            font-size: 0.95rem;
-            text-align: right;
+        .compare-value{
+            color:var(--text-dim);
+            font-size:0.95rem;
+            text-align:right;
         }
 
         .input-wrapper{
             margin-bottom:1.5rem;
-            position: relative;
+            position:relative;
         }
 
         input,
@@ -291,35 +291,35 @@
             background:rgba(255,255,255,.08);
         }
 
-        input[readonly] {
-            background: rgba(255, 255, 255, 0.02);
-            border-color: rgba(255, 255, 255, 0.05);
-            color: var(--text-dim);
-            cursor: not-allowed;
+        input[readonly]{
+            background:rgba(255,255,255,0.02);
+            border-color:rgba(255,255,255,0.05);
+            color:var(--text-dim);
+            cursor:not-allowed;
         }
 
-        .password-toggle {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            color: var(--text-dim);
-            font-size: 0.85rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.2s;
-            user-select: none;
-            padding: 5px;
+        .password-toggle{
+            position:absolute;
+            right:15px;
+            top:50%;
+            transform:translateY(-50%);
+            background:none;
+            border:none;
+            color:var(--text-dim);
+            font-size:0.85rem;
+            font-weight:600;
+            cursor:pointer;
+            transition:0.2s;
+            user-select:none;
+            padding:5px;
         }
 
-        .password-toggle:hover {
-            color: var(--accent-light);
+        .password-toggle:hover{
+            color:var(--accent-light);
         }
 
-        .auth-input-container-with-toggle input {
-            padding-right: 4.5rem;
+        .auth-input-container-with-toggle input{
+            padding-right:4.5rem;
         }
 
         #paypal-button-container{
@@ -350,63 +350,71 @@
             transform:translateY(-2px);
         }
 
+        .submit-btn:disabled{
+            opacity:.6;
+            cursor:not-allowed;
+            transform:none;
+        }
+
         .auth-status{
             text-align:center;
             margin-top:1rem;
             color:var(--accent-light);
-            font-size: 0.9rem;
-        }
-        
-        #authLink {
-            color: var(--accent-light);
-            text-decoration: none;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s;
+            font-size:0.9rem;
         }
 
-        #authLink:hover {
-            text-decoration: underline;
-            filter: brightness(1.2);
+        #authLink{
+            color:var(--accent-light);
+            text-decoration:none;
+            font-weight:600;
+            cursor:pointer;
+            transition:0.3s;
         }
 
-        .auth-divider {
-            text-align:center; 
-            margin: 1.5rem 0; 
-            color: var(--text-dim); 
-            font-size: 0.8rem; 
-            position: relative;
+        #authLink:hover{
+            text-decoration:underline;
+            filter:brightness(1.2);
         }
-        .auth-divider span {
-            background: var(--bg); 
-            padding: 0 10px; 
-            position: relative; 
-            z-index: 1;
+
+        .auth-divider{
+            text-align:center;
+            margin:1.5rem 0;
+            color:var(--text-dim);
+            font-size:0.8rem;
+            position:relative;
         }
-        .auth-divider hr {
-            position: absolute; 
-            top: 50%; 
-            width: 100%; 
-            border: 0; 
-            border-top: 1px solid var(--glass-border); 
-            z-index: 0;
+
+        .auth-divider span{
+            background:var(--bg);
+            padding:0 10px;
+            position:relative;
+            z-index:1;
+        }
+
+        .auth-divider hr{
+            position:absolute;
+            top:50%;
+            width:100%;
+            border:0;
+            border-top:1px solid var(--glass-border);
+            z-index:0;
         }
 
         .cancel-sub-btn{
             display:none;
             margin-top:1rem;
-            background: #ff4d4d !important;
-            color: white !important;
+            background:#ff4d4d !important;
+            color:white !important;
         }
 
         .projects-grid{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 40px;
-            margin-top: 2rem;
-            width: 92%;
-            max-width: 1200px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:40px;
+            margin-top:2rem;
+            width:92%;
+            max-width:1200px;
         }
 
         .project-card{
@@ -415,49 +423,46 @@
             border:1px solid var(--glass-border);
             background:var(--glass);
             transition:.4s;
-            width: 100%;
-            max-width: 500px;
-            height: 650px;
-            opacity: 0.9;
+            width:100%;
+            max-width:500px;
+            height:650px;
+            opacity:0.9;
         }
 
         .project-card:hover{
-            transform: scale(1.03) translateY(-10px);
+            transform:scale(1.03) translateY(-10px);
             box-shadow:0 0 30px var(--accent-glow);
-            opacity: 1;
+            opacity:1;
         }
 
         .project-card img{
             width:100%;
             height:100%;
             object-fit:cover;
-            display: block;
+            display:block;
         }
 
         @media(max-width:600px){
             .tier-selection-grid{
                 grid-template-columns:1fr;
             }
+
             header h1{
                 font-size:2.5rem;
             }
-            .project-card {
-                height: 400px;
-                max-width: 95%;
+
+            .project-card{
+                height:400px;
+                max-width:95%;
             }
         }
     </style>
 </head>
 <body>
-
 <nav>
     <div class="nav-container" onclick="showPage('main-page')">
-        <img src="https://i.postimg.cc/k5KcZgbm/OG-logo.png" 
-             class="nav-logo-img" 
-             alt="OG Websites Logo">
-        <div class="gradient-text" style="font-weight:800;font-size:1.8rem;letter-spacing:3px;">
-            WEBSITES
-        </div>
+        <img src="https://i.postimg.cc/k5KcZgbm/OG-logo.png" class="nav-logo-img" alt="OG Websites Logo">
+        <div class="gradient-text" style="font-weight:800;font-size:1.8rem;letter-spacing:3px;">WEBSITES</div>
     </div>
 
     <div class="nav-buttons">
@@ -465,18 +470,10 @@
             <img src="https://img.icons8.com/material-rounded/48/home.png" alt="home">
             Home
         </button>
-        <button class="btn-secondary" onclick="showPage('projects-page')">
-            Our Projects
-        </button>
-        <button class="btn-secondary" onclick="showPage('details-page')">
-            Compare Plans
-        </button>
-        <button class="btn-secondary" onclick="showPage('support-page')">
-            Support
-        </button>
-        <button class="btn-secondary" id="nav-auth-btn" onclick="showPage('auth-page')">
-            Login / Sign Up
-        </button>
+        <button class="btn-secondary" onclick="showPage('projects-page')">Our Projects</button>
+        <button class="btn-secondary" onclick="showPage('details-page')">Compare Plans</button>
+        <button class="btn-secondary" onclick="showPage('support-page')">Support</button>
+        <button class="btn-secondary" id="nav-auth-btn" onclick="showPage('auth-page')">Login / Sign Up</button>
         <button class="btn-secondary hidden" id="nav-profile-btn" onclick="showPage('profile-page')">
             <img src="https://img.icons8.com/material-rounded/48/user.png" alt="profile">
             Profile
@@ -492,13 +489,12 @@
 
     <div class="billing-toggle">
         <div class="toggle-opt active" id="btn-monthly" onclick="setBilling('monthly')">Monthly</div>
-        <div class="toggle-opt" id="btn-yearly" onclick="setBilling('yearly')">
-            Yearly <span style="color:#00ff88;font-size:.7rem;">-20%</span>
-        </div>
+        <div class="toggle-opt" id="btn-yearly" onclick="setBilling('yearly')">Yearly <span style="color:#00ff88;font-size:.7rem;">-20%</span></div>
     </div>
 
     <div class="glass-card">
         <form id="orderForm">
+            <div class="auth-status hidden" id="orderError" style="color:#ff4d4d;margin-top:0;margin-bottom:1rem;"></div>
             <div class="tier-selection-grid">
                 <div class="tier-card selected" onclick="selectTier('Basic',this)">
                     <b>Basic</b><br>
@@ -515,22 +511,17 @@
             </div>
 
             <div class="input-wrapper">
-                <input type="text" id="clientName" placeholder="Full Name" oninput="checkSilentValidation()">
+                <input type="text" id="clientName" placeholder="Full Name" oninput="handleOrderInput()">
             </div>
             <div class="input-wrapper">
-                <input type="email" id="clientEmail" placeholder="Gmail Address" oninput="checkSilentValidation()">
+                <input type="email" id="clientEmail" placeholder="Account Email (auto-filled after login)" oninput="handleOrderInput()">
             </div>
             <div class="input-wrapper">
-                <input type="text" id="clientDiscord" placeholder="Discord Username (Optional)" oninput="checkSilentValidation()" style="margin-bottom:1.5rem">
-            </div>
-            <div class="input-wrapper">
-                <textarea id="projectDetails" rows="3" placeholder="Describe your vision... (min 6 characters.) " oninput="checkSilentValidation()"></textarea>
+                <textarea id="projectDetails" rows="3" placeholder="Describe your vision... (min 6 characters.) " oninput="handleOrderInput()"></textarea>
             </div>
 
             <div id="paypal-button-container"></div>
-            <div class="auth-status" id="authStatus">
-                <a id="authLink" onclick="showPage('auth-page')">Please log in to purchase</a>
-            </div>
+            <div class="auth-status" id="authStatus"></div>
         </form>
     </div>
 </main>
@@ -574,10 +565,10 @@
     <header><h1 class="gradient-text">Support Center</h1></header>
     <div class="glass-card">
         <form onsubmit="sendSupportMessage(event)">
-            <h3 style="color: #fff; margin-bottom: 1.5rem;">Open a Ticket</h3>
+            <h3 style="color:#fff;margin-bottom:1.5rem;">Open a Ticket</h3>
             <input type="text" id="supportProjectName" placeholder="Project Name / Question" style="margin-bottom:1rem" required>
-            <input type="email" id="supportEmail" placeholder="Gmail Address" style="margin-bottom:1rem" required>
-            <textarea id="supportDescription" rows="5" placeholder="How can we help?" style="margin-bottom:1.5rem" required></textarea>
+            <input type="email" id="supportEmail" placeholder="Gmail Address" style="margin-bottom:1rem" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a valid Gmail address." required>
+            <textarea id="supportDescription" rows="5" placeholder="How can we help? (min 6 characters)" style="margin-bottom:1.5rem" minlength="6" required></textarea>
             <button type="submit" class="submit-btn">Submit Ticket</button>
         </form>
     </div>
@@ -587,94 +578,132 @@
     <header><h1 class="gradient-text">Account Access</h1></header>
     <div class="glass-card">
         <div id="auth-inputs-container">
-            <div class="input-wrapper"><input type="email" id="authEmail" placeholder="Gmail Address (@gmail.com only)"></div>
-            
+            <div class="input-wrapper"><input type="email" id="authEmail" placeholder="Email Address"></div>
             <div class="input-wrapper auth-input-container-with-toggle">
                 <input type="password" id="authPassword" placeholder="Password (min. 6 chars)">
                 <button type="button" class="password-toggle" id="togglePasswordBtn" onclick="togglePasswordVisibility()">SHOW</button>
             </div>
-            
-            <button class="submit-btn" id="signup-btn" style="margin-bottom:1rem;" onclick="signupUser()">Sign Up</button>
-            <button class="submit-btn" id="login-btn" onclick="loginUser()">Login</button>
+            <div class="billing-toggle auth-mode-toggle" style="margin-bottom:1rem;">
+                <div class="toggle-opt active" id="auth-mode-login" onclick="setAuthMode('login')">Login</div>
+                <div class="toggle-opt" id="auth-mode-signup" onclick="setAuthMode('signup')">Sign Up</div>
+            </div>
+            <p id="authModeHint" style="color:var(--text-dim);font-size:0.85rem;text-align:center;margin-bottom:1rem;">Use your account email and password to log in.</p>
+            <div class="auth-status hidden" id="authError" style="color:#ff4d4d;margin-bottom:1rem;"></div>
+            <div id="auth-login-actions">
+                <button type="button" class="submit-btn" id="login-btn" onclick="loginUser()">Login</button>
+                <button type="button" class="submit-btn" id="reset-auth-btn" style="margin-top:1rem;background:rgba(255,255,255,0.08);color:#fff;border:1px solid var(--glass-border);" onclick="requestPasswordReset()">Reset Password</button>
+            </div>
+            <div id="auth-signup-actions" class="hidden">
+                <button type="button" class="submit-btn" id="signup-btn" onclick="signupUser()">Sign Up</button>
+            </div>
             <div class="auth-divider"><span>OR</span><hr></div>
-            <button class="submit-btn" id="google-btn" style="background: #fff; color: #000; display: flex; align-items: center; justify-content: center; gap: 10px;" onclick="loginWithGoogle()">
-                <img src="https://img.icons8.com/color/48/google-logo.png" style="height:20px; width:20px;" alt="Google">
+            <button type="button" class="submit-btn" id="google-btn" style="background:#fff;color:#000;display:flex;align-items:center;justify-content:center;gap:10px;" onclick="loginWithGoogle()">
+                <img src="https://img.icons8.com/color/48/google-logo.png" style="height:20px;width:20px;" alt="Google">
                 Continue with Google
             </button>
         </div>
 
-        <div id="verification-container" class="hidden" style="margin-top: 1rem;">
+        <div id="verification-container" class="hidden" style="margin-top:1rem;">
             <div class="auth-divider"><span>VERIFICATION REQUIRED</span><hr></div>
-            <p style="color: var(--text-dim); text-align: center; margin-bottom: 1rem; font-size: 0.9rem;">
-                Enter the one-time 6-digit security code sent to your email.
-            </p>
+            <p style="color:var(--text-dim);text-align:center;margin-bottom:1rem;font-size:0.9rem;">Enter the one-time 6-digit security code sent to your email.</p>
             <div class="input-wrapper">
-                <input type="text" id="verificationCodeInput" placeholder="Enter 6-Digit Code" maxlength="6" style="text-align: center; font-size: 1.5rem; letter-spacing: 5px;">
+                <input type="text" id="verificationCodeInput" placeholder="Enter 6-Digit Code" maxlength="6" style="text-align:center;font-size:1.5rem;letter-spacing:5px;">
             </div>
-            <button class="submit-btn" id="verify-code-btn" style="background: #00ff88; color: #000; margin-bottom:1rem;">Verify & Proceed</button>
-            <button class="submit-btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--glass-border);" onclick="cancelVerificationFlow()">Cancel</button>
+            <button class="submit-btn" id="verify-code-btn" style="background:#00ff88;color:#000;margin-bottom:1rem;">Verify & Proceed</button>
+            <button class="submit-btn" style="background:rgba(255,255,255,0.05);color:#fff;border:1px solid var(--glass-border);" onclick="cancelVerificationFlow()">Cancel</button>
         </div>
 
-        <div id="google-existing-container" class="hidden" style="margin-top: 1rem; text-align: center;">
-            <div class="auth-divider"><span>WELCOME BACK</span><hr></div>
-            <p style="color: var(--text-dim); margin-bottom: 1.5rem; font-size: 0.9rem;">
-                You already have an account. Choose an option to proceed:
-            </p>
-            <button class="submit-btn" style="background: var(--accent-light); color: #000; margin-bottom: 1rem;" onclick="showGooglePasswordUpdate()">1. Update Old Password</button>
-            <button class="submit-btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--glass-border);" onclick="continueWithOldPassword()">2. Continue with Old Password</button>
-        </div>
-
-        <div id="google-new-container" class="hidden" style="margin-top: 1rem;">
-            <div class="auth-divider"><span>CREATE PASSWORD</span><hr></div>
-            <p style="color: var(--text-dim); text-align: center; margin-bottom: 1rem; font-size: 0.9rem;">
-                Set a security password for your new account to secure direct access.
-            </p>
+        <div id="password-reset-container" class="hidden" style="margin-top:1rem;">
+            <div class="auth-divider"><span>RESET PASSWORD</span><hr></div>
+            <p id="passwordResetEmailLabel" style="color:var(--text-dim);text-align:center;margin-bottom:1rem;font-size:0.9rem;">Set a new password for your account.</p>
             <div class="input-wrapper auth-input-container-with-toggle">
-                <input type="password" id="googleNewPassword" placeholder="New Password (min. 6 chars)">
-                <button type="button" class="password-toggle" id="toggleGoogleNewPasswordBtn" onclick="togglePasswordVisibilityId('googleNewPassword', 'toggleGoogleNewPasswordBtn')">SHOW</button>
+                <input type="password" id="newResetPassword" placeholder="New Password (min. 6 chars)">
             </div>
-            <button class="submit-btn" style="background: #00ff88; color: #000;" onclick="saveGoogleNewPassword()">Set Password & Continue</button>
-        </div>
-
-        <div id="google-update-container" class="hidden" style="margin-top: 1rem;">
-            <div class="auth-divider"><span>UPDATE PASSWORD</span><hr></div>
             <div class="input-wrapper auth-input-container-with-toggle">
-                <input type="password" id="googleUpdatePassword" placeholder="Enter New Password (min. 6 chars)">
-                <button type="button" class="password-toggle" id="toggleGoogleUpdatePasswordBtn" onclick="togglePasswordVisibilityId('googleUpdatePassword', 'toggleGoogleUpdatePasswordBtn')">SHOW</button>
+                <input type="password" id="confirmResetPassword" placeholder="Confirm New Password">
             </div>
-            <button class="submit-btn" style="background: #00ff88; color: #000; margin-bottom: 1rem;" onclick="saveGoogleUpdatedPassword()">Update & Proceed</button>
-            <button class="submit-btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--glass-border);" onclick="cancelGoogleFlow()">Cancel</button>
+            <div class="auth-status hidden" id="passwordResetError" style="color:#ff4d4d;margin-bottom:1rem;"></div>
+            <button class="submit-btn" style="background:#00ff88;color:#000;margin-bottom:1rem;" onclick="completePasswordReset()">Save New Password</button>
+            <button class="submit-btn" style="background:rgba(255,255,255,0.05);color:#fff;border:1px solid var(--glass-border);" onclick="cancelPasswordResetUi()">Cancel</button>
         </div>
     </div>
 </main>
 
 <main id="profile-page" class="page-view hidden">
     <header><h1 class="gradient-text">Your Profile</h1></header>
-    <div class="glass-card" style="text-align: center;">
-        <div id="profile-details" style="margin-bottom: 2rem;">
-            <h3 id="displayEmail" style="color: #fff; margin-bottom: 0.5rem;">User Email</h3>
-            <p id="displayUid" style="color: var(--text-dim); font-size: 0.8rem;">UID: 00000000</p>
+    <div class="glass-card" style="text-align:center;">
+        <div id="profile-details" style="margin-bottom:2rem;">
+            <h3 id="displayEmail" style="color:#fff;margin-bottom:0.5rem;">User Email</h3>
+            <p id="displayUid" style="color:var(--text-dim);font-size:0.8rem;">UID: 00000000</p>
         </div>
-        
-        <button type="button" class="submit-btn cancel-sub-btn" id="profileCancelSub" onclick="cancelSubscription()">
-            Cancel Active Subscription
-        </button>
-        
-        <button class="submit-btn" style="background: rgba(255, 77, 77, 0.1); border: 1px solid #ff4d4d; color: #ff4d4d; margin-top: 1rem;" onclick="logoutUser()">
-            Logout of Account
-        </button>
+        <button type="button" class="submit-btn" id="reset-profile-btn" style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid var(--glass-border);" onclick="requestPasswordResetFromProfile()">Reset Password</button>
+        <button type="button" class="submit-btn cancel-sub-btn" id="profileCancelSub" onclick="cancelSubscription()">Cancel Active Subscription</button>
+        <button class="submit-btn" style="background:rgba(255,77,77,0.1);border:1px solid #ff4d4d;color:#ff4d4d;margin-top:1rem;" onclick="logoutUser()">Logout of Account</button>
     </div>
 </main>
 
 <script>
-    const ORDER_WEBHOOK = "https://discord.com/api/webhooks/1501632580058091570/OHmK0Vr6ZqpfQ5RtS9obRk6ulU5fj_L8xr_80LI9vlSKgmXV1FHIHDZEHRqG4iouNdPQ";
-    const SUPPORT_WEBHOOK = "https://discord.com/api/webhooks/1501632588157288458/9TThDm--A1c1LD2kDodKSvATT4ZikRc8lfPiUrhLbaStTLeqQvIrwEnosMtV91n8BXLb";
+    const OWNER_EMAIL = "jorgepenilt@gmail.com";
+    window.EMAILJS_CONFIG = {
+        PUBLIC_KEY: "jIZgOpAvbbRndoO8x",
+        SERVICE_ID: "service_fcz9rpa",
+        ORDER_TEMPLATE_ID: "template_c1b5po8",
+        SUPPORT_TEMPLATE_ID: "template_c1b5po8",
+        VERIFICATION_TEMPLATE_ID: "template_37yrunb"
+    };
+    window.RESET_EMAILJS_CONFIG = {
+        PUBLIC_KEY: "JEsnZLZz5_aieabrm",
+        SERVICE_ID: "service_ochqkd9",
+        TEMPLATE_ID: "template_dwc7xcm"
+    };
+    const EMAILJS_PUBLIC_KEY = window.EMAILJS_CONFIG.PUBLIC_KEY;
+    const EMAILJS_SERVICE_ID = window.EMAILJS_CONFIG.SERVICE_ID;
+    const EMAILJS_ORDER_TEMPLATE_ID = window.EMAILJS_CONFIG.ORDER_TEMPLATE_ID;
+    const EMAILJS_SUPPORT_TEMPLATE_ID = window.EMAILJS_CONFIG.SUPPORT_TEMPLATE_ID;
+    const SUPPORT_MIN_MESSAGE_LENGTH = 6;
+    const RESET_COOLDOWN_MS = 60000;
+    const RESET_FAILURE_THRESHOLD = 3;
+    let resetRequestInFlight = false;
+    let resetCooldownUntil = 0;
+    let resetFailureCount = 0;
 
     const PROJECT_IMAGES = [
-        "https://i.postimg.cc/bvZX2bW0/Restaurant-temp-1.png", 
+        "https://i.postimg.cc/bvZX2bW0/Restaurant-temp-1.png",
         "https://i.postimg.cc/26Bfgvx4/e-comerces-temp-1.png",
         "https://i.postimg.cc/g0spvm2d/dropshipping-temp-1.png"
     ];
+
+    async function sendEmailViaEmailJS(templateId, templateParams) {
+        const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                service_id: EMAILJS_SERVICE_ID,
+                template_id: templateId,
+                user_id: EMAILJS_PUBLIC_KEY,
+                template_params: templateParams
+            })
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(errorText || "EmailJS request failed.");
+        }
+    }
+
+    function buildTemplateParams(base) {
+        return {
+            to_email: OWNER_EMAIL,
+            name: base.name || "Website User",
+            email: base.email || "no-reply@local",
+            subject: base.subject || "Website Notification",
+            message: base.message || "",
+            sent_at: new Date().toISOString(),
+            ...base
+        };
+    }
 
     function loadProjects() {
         const container = document.getElementById('projects-gallery');
@@ -688,10 +717,15 @@
         });
     }
 
-    window.addEventListener('DOMContentLoaded', loadProjects);
+    window.addEventListener('DOMContentLoaded', function() {
+        loadProjects();
+        setAuthMode('login');
+    });
 
     let currentTier = 'Basic';
     let billingCycle = 'monthly';
+    window.authStateReady = false;
+    window.orderFormTouched = false;
 
     function setBilling(cycle){
         billingCycle = cycle;
@@ -707,6 +741,10 @@
     function showPage(id){
         document.querySelectorAll('.page-view').forEach(p=>p.classList.add('hidden'));
         document.getElementById(id).classList.remove('hidden');
+        if (id === 'main-page') {
+            syncOrderEmailWithAccount(getActiveUser());
+            checkSilentValidation();
+        }
         window.scrollTo(0,0);
     }
 
@@ -716,48 +754,174 @@
         el.classList.add('selected');
     }
 
-    function checkSilentValidation(){
+    function getActiveUser() {
+        return window.currentUser || (window.firebaseAuth && window.firebaseAuth.currentUser) || null;
+    }
+
+    function handleOrderInput() {
+        window.orderFormTouched = true;
+        checkSilentValidation();
+    }
+
+    window.authMode = "login";
+    function setAuthMode(mode) {
+        window.authMode = mode === "signup" ? "signup" : "login";
+
+        const loginTab = document.getElementById('auth-mode-login');
+        const signupTab = document.getElementById('auth-mode-signup');
+        const loginActions = document.getElementById('auth-login-actions');
+        const signupActions = document.getElementById('auth-signup-actions');
+        const authModeHint = document.getElementById('authModeHint');
+
+        if (!loginTab || !signupTab || !loginActions || !signupActions || !authModeHint) {
+            return;
+        }
+
+        if (window.authMode === "signup") {
+            loginTab.classList.remove('active');
+            signupTab.classList.add('active');
+            loginActions.classList.add('hidden');
+            signupActions.classList.remove('hidden');
+            authModeHint.innerText = "Create a new account and verify your email.";
+        } else {
+            loginTab.classList.add('active');
+            signupTab.classList.remove('active');
+            loginActions.classList.remove('hidden');
+            signupActions.classList.add('hidden');
+            authModeHint.innerText = "Use your account email and password to log in.";
+        }
+    }
+
+    function normalizeEmail(email) {
+        return (email || "").trim().toLowerCase();
+    }
+
+    function showOrderError(message) {
+        const orderError = document.getElementById('orderError');
+        orderError.innerHTML = message;
+        orderError.classList.remove('hidden');
+    }
+
+    function clearOrderError() {
+        const orderError = document.getElementById('orderError');
+        orderError.innerText = "";
+        orderError.classList.add('hidden');
+    }
+
+    function syncOrderEmailWithAccount(user) {
+        const emailInput = document.getElementById('clientEmail');
+        if (!emailInput) return;
+
+        if (user && user.email) {
+            emailInput.value = user.email;
+            emailInput.readOnly = true;
+            emailInput.placeholder = "Account Email";
+            emailInput.title = "This email is automatically filled from your account.";
+        } else {
+            emailInput.value = "";
+            emailInput.readOnly = false;
+            emailInput.placeholder = "Account Email (auto-filled after login)";
+            emailInput.title = "Log in first to auto-fill your account email.";
+        }
+    }
+
+    function getOrderState() {
+        const activeUser = getActiveUser();
         const name = document.getElementById('clientName').value.trim();
         const email = document.getElementById('clientEmail').value.trim();
         const details = document.getElementById('projectDetails').value.trim();
+        const accountEmail = activeUser && activeUser.email ? activeUser.email : "";
+
+        return {
+            activeUser,
+            name,
+            email,
+            details,
+            accountEmail,
+            hasAllDetails: name.length > 1 && email.includes('@') && details.length > 5,
+            emailMatchesAccount: !!accountEmail && normalizeEmail(email) === normalizeEmail(accountEmail)
+        };
+    }
+
+    function checkSilentValidation(){
         const authStatus = document.getElementById('authStatus');
-        
-        if(name.length > 1 && email.includes('@') && details.length > 5 && window.currentUser){
+        const orderState = getOrderState();
+
+        if (!window.authStateReady) {
+            document.getElementById('paypal-button-container').classList.remove('active');
+            authStatus.innerHTML = "";
+            clearOrderError();
+            return;
+        }
+
+        if(orderState.activeUser && orderState.hasAllDetails && orderState.emailMatchesAccount){
             document.getElementById('paypal-button-container').classList.add('active');
-            authStatus.innerHTML = "Logged in as " + window.currentUser.email;
+            authStatus.innerHTML = "";
+            clearOrderError();
         } else {
             document.getElementById('paypal-button-container').classList.remove('active');
-            if(!window.currentUser) {
-                authStatus.innerHTML = `<a id="authLink" onclick="showPage('auth-page')">Please log in to purchase</a>`;
+            authStatus.innerHTML = "";
+
+            if (!window.orderFormTouched) {
+                clearOrderError();
+                return;
+            }
+
+            if(!orderState.activeUser) {
+                showOrderError(`You need an account to purchase. <a id="authLink" onclick="showPage('auth-page')">Create account</a>`);
+            } else if(!orderState.hasAllDetails) {
+                showOrderError("Please fill in all the info to purchase.");
+            } else if(!orderState.emailMatchesAccount) {
+                showOrderError("Use the email connected to your account: " + orderState.accountEmail);
             } else {
-                authStatus.innerHTML = "Complete fields to enable PayPal";
+                clearOrderError();
             }
         }
     }
 
     function sendSupportMessage(event){
         event.preventDefault();
-        const payload = {
-            embeds:[{
-                title:"📩 NEW SUPPORT TICKET",
-                color:3447003,
-                fields:[
-                    {name:"Project", value:document.getElementById('supportProjectName').value},
-                    {name:"Email", value:document.getElementById('supportEmail').value},
-                    {name:"Issue", value:document.getElementById('supportDescription').value}
-                ],
-                footer: { text: "OG Websites Support System" },
-                timestamp: new Date()
-            }]
-        };
-        fetch(SUPPORT_WEBHOOK,{
-            method:'POST',
-            headers:{'Content-Type':'application/json'},
-            body:JSON.stringify(payload)
-        }).then(() => {
-            alert("Ticket Submitted!");
-            showPage('main-page');
+
+        if (!OWNER_EMAIL || OWNER_EMAIL === "your-email@gmail.com") {
+            alert("Support email is not configured yet.");
+            return;
+        }
+        const supportEmailElement = document.getElementById('supportEmail');
+        const supportDescriptionElement = document.getElementById('supportDescription');
+        const supportEmail = supportEmailElement.value.trim().toLowerCase();
+        const supportProjectName = document.getElementById('supportProjectName').value.trim();
+        const supportDescription = supportDescriptionElement.value.trim();
+
+        if (!supportEmail.endsWith("@gmail.com")) {
+            alert("Please enter a valid Gmail address for support.");
+            supportEmailElement.focus();
+            return;
+        }
+
+        if (supportDescription.length < SUPPORT_MIN_MESSAGE_LENGTH) {
+            alert(`Please describe your issue in at least ${SUPPORT_MIN_MESSAGE_LENGTH} characters.`);
+            supportDescriptionElement.focus();
+            return;
+        }
+        const templateParams = buildTemplateParams({
+            name: supportProjectName,
+            email: supportEmail,
+            subject: "New Support Ticket",
+            message: `Project/Question: ${supportProjectName}\nSender: ${supportEmail}\nIssue: ${supportDescription}`,
+            reply_to: supportEmail,
+            user_email: supportEmail,
+            project_name: supportProjectName
         });
+
+        sendEmailViaEmailJS(EMAILJS_SUPPORT_TEMPLATE_ID, templateParams)
+            .then(() => {
+                alert("Ticket Submitted!");
+                showPage('main-page');
+            })
+            .catch((error) => {
+                console.error(error);
+                alert("Could not send support ticket. Please try again.");
+            });
     }
 
     function cancelSubscription(){
@@ -769,7 +933,7 @@
     function togglePasswordVisibility() {
         const passwordInput = document.getElementById('authPassword');
         const toggleBtn = document.getElementById('togglePasswordBtn');
-        
+
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
             toggleBtn.innerText = 'HIDE';
@@ -779,20 +943,46 @@
         }
     }
 
-    function togglePasswordVisibilityId(inputId, btnId) {
-        const passwordInput = document.getElementById(inputId);
-        const toggleBtn = document.getElementById(btnId);
-        if (passwordInput.type === 'password') {
-            passwordInput.type = 'text';
-            toggleBtn.innerText = 'HIDE';
-        } else {
-            passwordInput.type = 'password';
-            toggleBtn.innerText = 'SHOW';
+    function getPurchaseValidationError() {
+        const orderState = getOrderState();
+
+        if (!orderState.activeUser) {
+            return "You need an account to purchase.";
         }
+
+        if (!orderState.hasAllDetails) {
+            return "Please fill in all the info to purchase.";
+        }
+
+        if (!orderState.emailMatchesAccount) {
+            return "Use the email connected to your account: " + orderState.accountEmail;
+        }
+
+        return "";
     }
 
     paypal.Buttons({
+        onClick:function(data,actions){
+            const errorMessage = getPurchaseValidationError();
+
+            if (errorMessage) {
+                alert(errorMessage);
+                if (!getActiveUser()) {
+                    showPage('auth-page');
+                }
+                return actions.reject();
+            }
+
+            return actions.resolve();
+        },
         createSubscription:function(data,actions){
+            const errorMessage = getPurchaseValidationError();
+
+            if (errorMessage) {
+                alert(errorMessage);
+                return Promise.reject(new Error(errorMessage));
+            }
+
             const planIds = {
                 monthly:{ Basic:"P-69P3981420001113SNH5YMUI", Advanced:"P-3XB82390WU7228036NH5Y2IQ", Premium:"P-3W021136F9626704VNH5Y3QI" },
                 yearly:{ Basic:"P-99C129587B2750623NH6J6IA", Advanced:"P-52M46233MR674514ENH6J75I", Premium:"P-6U140429FU673050NNH6KBBQ" }
@@ -800,25 +990,35 @@
             return actions.subscription.create({'plan_id': planIds[billingCycle][currentTier]});
         },
         onApprove:function(data,actions){
-            const payload = {
-                embeds:[{
-                    title:"💰 NEW ORDER RECEIVED",
-                    color:5763719,
-                    fields:[
-                        {name:"Client Name", value:document.getElementById('clientName').value, inline: true},
-                        {name:"Client Email", value:document.getElementById('clientEmail').value, inline: true},
-                        {name:"Plan", value:`${currentTier} (${billingCycle})`, inline: true},
-                        {name:"Project Details", value:document.getElementById('projectDetails').value},
-                        {name:"Subscription ID", value:data.subscriptionID},
-                        {name:"Firebase UID", value: window.currentUser ? window.currentUser.uid : "N/A"}
-                    ],
-                    timestamp: new Date()
-                }]
-            };
-            fetch(ORDER_WEBHOOK,{ method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload) })
-            .then(() => {
+            const clientName = document.getElementById('clientName').value.trim();
+            const clientEmail = document.getElementById('clientEmail').value.trim();
+            const projectDetails = document.getElementById('projectDetails').value.trim();
+            const selectedPlan = `${currentTier} (${billingCycle})`;
+            const firebaseUid = getActiveUser() ? getActiveUser().uid : "N/A";
+            const templateParams = buildTemplateParams({
+                name: clientName,
+                email: clientEmail,
+                subject: "New Order Received",
+                message: `Client: ${clientName}\nEmail: ${clientEmail}\nPlan: ${selectedPlan}\nSubscription ID: ${data.subscriptionID}\nUID: ${firebaseUid}\nProject details: ${projectDetails}`,
+                client_name: clientName,
+                client_email: clientEmail,
+                plan: selectedPlan,
+                project_details: projectDetails,
+                subscription_id: data.subscriptionID,
+                firebase_uid: firebaseUid
+            });
+
+            const sendPromise = (!OWNER_EMAIL || OWNER_EMAIL === "your-email@gmail.com")
+                ? Promise.resolve()
+                : sendEmailViaEmailJS(EMAILJS_ORDER_TEMPLATE_ID, templateParams);
+
+            sendPromise.then(() => {
                 localStorage.setItem('activeSubscription', data.subscriptionID);
+                document.getElementById('profileCancelSub').style.display = 'block';
                 alert("Order Successful!");
+            }).catch((error) => {
+                console.error(error);
+                alert("Order completed, but email delivery failed. Check EmailJS setup.");
             });
         }
     }).render('#paypal-button-container');
@@ -826,230 +1026,301 @@
 
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-    import { 
-        getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, 
-        signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, updatePassword
+    import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        signInWithPopup,
+        GoogleAuthProvider,
+        verifyPasswordResetCode,
+        confirmPasswordReset,
+        sendPasswordResetEmail,
+        updatePassword,
+        signOut,
+        onAuthStateChanged,
+        fetchSignInMethodsForEmail
     } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+    const EMAILJS_PUBLIC_KEY = window.EMAILJS_CONFIG.PUBLIC_KEY;
+    const EMAILJS_SERVICE_ID = window.EMAILJS_CONFIG.SERVICE_ID;
+    const EMAILJS_TEMPLATE_ID = window.EMAILJS_CONFIG.VERIFICATION_TEMPLATE_ID;
+    const EMAILJS_RESET_TEMPLATE_ID = window.RESET_EMAILJS_CONFIG.TEMPLATE_ID;
+    const EMAILJS_RESET_PUBLIC_KEY = window.RESET_EMAILJS_CONFIG.PUBLIC_KEY;
+    const EMAILJS_RESET_SERVICE_ID = window.RESET_EMAILJS_CONFIG.SERVICE_ID;
 
     const firebaseConfig = {
         apiKey: "AIzaSyAvDL798yfZgVaj-Gpj3C38CMpVsKZpj2I",
         authDomain: "og-web-16fd3.firebaseapp.com",
         projectId: "og-web-16fd3",
         storageBucket: "og-web-16fd3.firebasestorage.app",
-        messagingSenderId: "573418258528",
-        appId: "1:573418258528:web:97a57ebe52039773b4c305"
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID"
     };
 
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
+    window.firebaseAuth = auth;
     const googleProvider = new GoogleAuthProvider();
 
-    window.currentUser = null;
-    const isGmail = (email) => email.toLowerCase().endsWith('@gmail.com');
+    let generatedVerificationCode = "";
+    let pendingVerificationEmail = "";
+    let pendingVerificationPassword = "";
+    let pendingPasswordResetCode = "";
 
-    let generatedCode = null;
-    let pendingAction = null; 
-    let googleUserRef = null; // Stash user info safely during configuration selection
-
-    const EMAILJS_SERVICE_ID = "service_h4rczgj";
-    const EMAILJS_TEMPLATE_ID = "template_5mf0dpa";
-
-    window.logoutUser = () => {
-        signOut(auth)
-            .then(() => {
-                window.location.reload(); 
-            })
-            .catch((err) => alert(err.message));
-    };
-
-    window.showVerificationUI = (code, actionCallback) => {
-        generatedCode = code;
-        pendingAction = actionCallback;
-        document.getElementById('auth-inputs-container').classList.add('hidden');
-        document.getElementById('verification-container').classList.remove('hidden');
-        document.getElementById('verificationCodeInput').value = "";
-    };
-
-    window.cancelVerificationFlow = () => {
-        if(auth.currentUser) {
-            auth.currentUser.delete().catch(() => {});
-        }
-        generatedCode = null;
-        pendingAction = null;
-        document.getElementById('verification-container').classList.add('hidden');
-        document.getElementById('auth-inputs-container').classList.remove('hidden');
-    };
-
-    document.getElementById('verify-code-btn').onclick = () => {
-        const userInput = document.getElementById('verificationCodeInput').value.trim();
-        if (userInput === String(generatedCode)) {
-            if (typeof pendingAction === "function") {
-                pendingAction();
-            }
-        } else {
-            alert("Invalid security code.");
-        }
-    };
-
-    const sendOtpEmail = (emailTarget, callback) => {
-        const code = Math.floor(100000 + Math.random() * 900000);
-        const templateParams = { to_email: emailTarget, email: emailTarget, code: code };
-        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
-            .then(() => { window.showVerificationUI(code, callback); })
-            .catch((err) => {
-                alert("Email failed: " + err.text);
-                if(auth.currentUser) auth.currentUser.delete().catch(() => {});
-            });
-    };
-
-    window.loginUser = () => {
-        const e = document.getElementById('authEmail').value.trim();
-        const p = document.getElementById('authPassword').value;
-        signInWithEmailAndPassword(auth, e, p)
-            .then(() => {
-                const targetEmail = auth.currentUser.email;
-                signOut(auth).then(() => {
-                    sendOtpEmail(targetEmail, () => {
-                        signInWithEmailAndPassword(auth, e, p).then(() => showPage('main-page'));
-                    });
-                });
-            })
-            .catch(err => alert(err.message));
-    };
-
-    window.signupUser = () => {
-        const e = document.getElementById('authEmail').value.trim();
-        const p = document.getElementById('authPassword').value;
-
-        if (!isGmail(e)) {
-            alert("Registration is restricted to @gmail.com domains only.");
-            return;
-        }
-        if (p.length < 6) {
-            alert("Password must be at least 6 characters long.");
-            return;
-        }
-
-        // Send OTP first before officially creating the backend account configuration
-        sendOtpEmail(e, () => {
-            createUserWithEmailAndPassword(auth, e, p)
-                .then(() => {
-                    alert("Account registered successfully!");
-                    showPage('main-page');
-                })
-                .catch(err => alert(err.message));
-        });
-    };
-
-    // --- NEW GOOGLE SIGN IN LOGIC HANDLERS ---
-
-    window.loginWithGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
-                const isNewUser = result._tokenResponse.isNewUser;
-                googleUserRef = result.user;
-
-                // Hide basic menu options
-                document.getElementById('auth-inputs-container').classList.add('hidden');
-
-                if (isNewUser) {
-                    // Scenario: User does not have an account -> Prompt for new password
-                    document.getElementById('google-new-container').classList.remove('hidden');
-                } else {
-                    // Scenario: User already has an account -> Offer the 2 required paths
-                    document.getElementById('google-existing-container').classList.remove('hidden');
-                }
-            })
-            .catch((err) => {
-                alert("Google sign-in failed: " + err.message);
-                cancelGoogleFlow();
-            });
-    };
-
-    window.continueWithOldPassword = () => {
-        alert("Welcome back!");
-        resetGoogleFlowUIVisibility();
-        showPage('main-page');
-    };
-
-    window.showGooglePasswordUpdate = () => {
-        document.getElementById('google-existing-container').classList.add('hidden');
-        document.getElementById('google-update-container').classList.remove('hidden');
-    };
-
-    window.saveGoogleUpdatedPassword = () => {
-        const newPassword = document.getElementById('googleUpdatePassword').value;
-        if (newPassword.length < 6) {
-            alert("Password must be at least 6 characters.");
-            return;
-        }
-
-        updatePassword(googleUserRef, newPassword)
-            .then(() => {
-                alert("Password updated successfully!");
-                resetGoogleFlowUIVisibility();
-                showPage('main-page');
-            })
-            .catch((err) => alert("Error updating password: " + err.message));
-    };
-
-    window.saveGoogleNewPassword = () => {
-        const newPassword = document.getElementById('googleNewPassword').value;
-        if (newPassword.length < 6) {
-            alert("Password must be at least 6 characters.");
-            return;
-        }
-
-        updatePassword(googleUserRef, newPassword)
-            .then(() => {
-                alert("Account secured with password successfully!");
-                resetGoogleFlowUIVisibility();
-                showPage('main-page');
-            })
-            .catch((err) => alert("Error saving password: " + err.message));
-    };
-
-    window.cancelGoogleFlow = () => {
-        signOut(auth).then(() => {
-            resetGoogleFlowUIVisibility();
-        });
-    };
-
-    function resetGoogleFlowUIVisibility() {
-        document.getElementById('google-existing-container').classList.add('hidden');
-        document.getElementById('google-new-container').classList.add('hidden');
-        document.getElementById('google-update-container').classList.add('hidden');
-        document.getElementById('auth-inputs-container').classList.remove('hidden');
-        googleUserRef = null;
+    function setAuthBusy(isBusy, text) {
+        const signupBtn = document.getElementById('signup-btn');
+        signupBtn.disabled = isBusy;
+        signupBtn.innerText = isBusy ? text : "Sign Up";
     }
 
-    // --- APPLICATION RUNTIME LISTENERS ---
+    function finishAuthFlow() {
+        document.getElementById('verification-container').classList.add('hidden');
+        document.getElementById('auth-inputs-container').classList.remove('hidden');
+        showPage('main-page');
+    }
 
-    onAuthStateChanged(auth, (user) => {
-        window.currentUser = user;
-        const navAuthBtn = document.getElementById('nav-auth-btn');
-        const navProfileBtn = document.getElementById('nav-profile-btn');
+    function showAuthError(message) {
+        const authError = document.getElementById('authError');
+        authError.innerText = message;
+        authError.classList.remove('hidden');
+    }
 
-        if (user) {
-            if (navAuthBtn) navAuthBtn.classList.add('hidden');
-            if (navProfileBtn) navProfileBtn.classList.remove('hidden');
-            
-            const displayEmail = document.getElementById('displayEmail');
-            const displayUid = document.getElementById('displayUid');
-            if (displayEmail) displayEmail.innerText = user.email;
-            if (displayUid) displayUid.innerText = "UID: " + user.uid;
+    function clearAuthError() {
+        const authError = document.getElementById('authError');
+        authError.innerText = "";
+        authError.classList.add('hidden');
+    }
 
-            if (localStorage.getItem('activeSubscription')) {
-                const cancelBtn = document.getElementById('profileCancelSub');
-                if (cancelBtn) cancelBtn.style.display = 'block';
-            }
-        } else {
-            if (navAuthBtn) navAuthBtn.classList.remove('hidden');
-            if (navProfileBtn) navProfileBtn.classList.add('hidden');
+    function showResetRequestError(message) {
+        showAuthError(message);
+        alert(message);
+    }
+
+    function getResetCooldownRemainingMs() {
+        return Math.max(0, resetCooldownUntil - Date.now());
+    }
+
+    function setResetCooldown(ms) {
+        resetCooldownUntil = Date.now() + ms;
+    }
+
+    function setResetButtonsDisabled(disabled, label) {
+        const authBtn = document.getElementById('reset-auth-btn');
+        const profileBtn = document.getElementById('reset-profile-btn');
+
+        if (authBtn) {
+            authBtn.disabled = disabled;
+            authBtn.innerText = disabled ? (label || "Please wait...") : "Reset Password";
         }
-        checkSilentValidation();
-    });
-</script>
+        if (profileBtn) {
+            profileBtn.disabled = disabled;
+            profileBtn.innerText = disabled ? (label || "Please wait...") : "Reset Password";
+        }
+    }
 
-</body>
-</html>
+    function refreshResetCooldownUi() {
+        const remainingMs = getResetCooldownRemainingMs();
+        if (remainingMs > 0) {
+            const seconds = Math.ceil(remainingMs / 1000);
+            setResetButtonsDisabled(true, `Try again in ${seconds}s`);
+            return;
+        }
+        setResetButtonsDisabled(false);
+    }
+
+    function showPasswordResetError(message) {
+        const resetError = document.getElementById('passwordResetError');
+        resetError.innerText = message;
+        resetError.classList.remove('hidden');
+    }
+
+    function clearPasswordResetError() {
+        const resetError = document.getElementById('passwordResetError');
+        resetError.innerText = "";
+        resetError.classList.add('hidden');
+    }
+
+    async function sendEmailByTemplate(templateId, templateParams) {
+        const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                service_id: EMAILJS_SERVICE_ID,
+                template_id: templateId,
+                user_id: EMAILJS_PUBLIC_KEY,
+                template_params: templateParams
+            })
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(errorText || "EmailJS request failed.");
+        }
+    }
+
+    async function sendResetEmailByTemplate(templateId, templateParams) {
+        const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                service_id: EMAILJS_RESET_SERVICE_ID,
+                template_id: templateId,
+                user_id: EMAILJS_RESET_PUBLIC_KEY,
+                publicKey: EMAILJS_RESET_PUBLIC_KEY,
+                template_params: templateParams
+            })
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(errorText || "EmailJS reset request failed.");
+        }
+    }
+
+    async function createFirebaseResetLink(email) {
+        const resetPageUrl = window.location.href.split('?')[0].split('#')[0];
+        const payload = {
+            requestType: "PASSWORD_RESET",
+            email: email,
+            returnOobLink: true
+        };
+
+        if (resetPageUrl.startsWith("http://") || resetPageUrl.startsWith("https://")) {
+            payload.continueUrl = resetPageUrl;
+            payload.canHandleCodeInApp = true;
+        }
+
+        const response = await fetch(`https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=${firebaseConfig.apiKey}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        });
+
+        const data = await response.json();
+        if (!response.ok) {
+            const code = data && data.error && data.error.message ? data.error.message : "RESET_LINK_CREATE_FAILED";
+            throw new Error(code);
+        }
+
+        if (!data.oobLink) {
+            throw new Error("RESET_LINK_MISSING");
+        }
+
+        try {
+            const resetUrl = new URL(resetPageUrl);
+            const oobUrl = new URL(data.oobLink);
+            const oobCode = oobUrl.searchParams.get("oobCode");
+            const mode = oobUrl.searchParams.get("mode") || "resetPassword";
+            const apiKey = oobUrl.searchParams.get("apiKey") || firebaseConfig.apiKey;
+            if (oobCode) {
+                resetUrl.searchParams.set("mode", mode);
+                resetUrl.searchParams.set("oobCode", oobCode);
+                resetUrl.searchParams.set("apiKey", apiKey);
+                return resetUrl.toString();
+            }
+        } catch (err) {
+            console.error(err);
+        }
+
+        return data.oobLink;
+    }
+
+    async function isEmailRegisteredInFirebase(email) {
+        const signInMethods = await fetchSignInMethodsForEmail(auth, email);
+        return signInMethods.length > 0;
+    }
+
+    function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function accountHasPasswordProvider(user) {
+        if (!user || !Array.isArray(user.providerData)) {
+            return false;
+        }
+        return user.providerData.some((provider) => provider && provider.providerId === "password");
+    }
+
+    async function tryDirectPasswordChangeForSignedInUser() {
+        const activeUser = auth.currentUser || window.currentUser;
+        if (!activeUser) {
+            return false;
+        }
+        if (!accountHasPasswordProvider(activeUser)) {
+            return false;
+        }
+
+        const newPassword = prompt("Too many reset attempts. Enter a new password here (min 6 chars):");
+        if (!newPassword) {
+            return false;
+        }
+        if (newPassword.length < 6) {
+            alert("Password must be at least 6 characters.");
+            return false;
+        }
+
+        const confirmPassword = prompt("Confirm your new password:");
+        if (!confirmPassword) {
+            return false;
+        }
+        if (newPassword !== confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+
+        try {
+            await updatePassword(activeUser, newPassword);
+            alert("Password updated successfully.");
+            return true;
+        } catch (error) {
+            console.error(error);
+            if (error.code === "auth/requires-recent-login") {
+                alert("Please log out and log in again, then try resetting password once more.");
+            } else {
+                alert("Could not update password directly. Please try again.");
+            }
+            return false;
+        }
+    }
+
+    window.signupUser = async function signupUser() {
+        const email = document.getElementById('authEmail').value.trim().toLowerCase();
+        const password = document.getElementById('authPassword').value;
+        clearAuthError();
+
+        if (!isValidEmail(email)) {
+            showAuthError("Please enter a valid email address.");
+            return;
+        }
+
+        if (password.length < 6) {
+            showAuthError("Password must be at least 6 characters.");
+            return;
+        }
+
+        try {
+            setAuthBusy(true, "Checking account...");
+
+            const emailAlreadyExists = await isEmailRegisteredInFirebase(email);
+
+            if (emailAlreadyExists) {
+                showAuthError("This account is already registered. Please log in instead.");
+                return;
+            }
+
+            setAuthBusy(true, "Sending code...");
+
+            generatedVerificationCode = Math.floor(100000 + Math.random() * 900000).toString();
+            pendingVerificationEmail = email;
+            pendingVerificationPassword = password;
+
+            const templateParams = {
+                to_email: email,
+                email: email,
+                u... (16 KB left)
